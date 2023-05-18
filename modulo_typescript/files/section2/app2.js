@@ -1,22 +1,47 @@
 "use strict";
-class Carro {
-    constructor(modelo, portas) {
-        this.velocidade = 0;
-        this.modelo = modelo;
-        this.portas = portas;
+class Car {
+    constructor(model, doors) {
+        this.speed = 0;
+        this.model = model;
+        this.doors = doors;
     }
-    acelerar() {
-        this.velocidade = this.velocidade + 10;
+    hitGas() {
+        this.speed = this.speed + 10;
     }
-    parar() {
-        this.velocidade = 0;
+    stop() {
+        this.speed = 0;
     }
-    velocidadeAtual() {
-        return this.velocidade;
+    instantSpeed() {
+        return this.speed;
     }
 }
-let mercedes = new Carro("Benz", 4);
-mercedes.acelerar();
-mercedes.acelerar();
-mercedes.acelerar();
-console.log(mercedes);
+class CarShop {
+    constructor(address, cars) {
+        this.address = address;
+        this.cars = cars;
+    }
+    showAddress() {
+        return this.address;
+    }
+    showCars() {
+        return this.cars;
+    }
+}
+class Person {
+    constructor(name, carroPreferido) {
+        this.name = name;
+        this.carroPreferido = carroPreferido;
+    }
+    myName() {
+        return this.name;
+    }
+    myPreffCar() {
+        return 'O meu carro preferido: ' + this.carroPreferido;
+    }
+    buyCar(car) {
+        this.car = car;
+    }
+    myCar() {
+        return this.car;
+    }
+}
