@@ -1,9 +1,9 @@
-export interface DAOInterface{
+export interface DAOInterface<T>{
   nameTable: string
 
-  inserir(object:any): boolean
-  atualizar(object: any): boolean
-  remover(id: number): any
-  selecionar(id: number): any
-  slecionarTodos(): [any]
+  inserir(object:T): boolean
+  atualizar(object: T): boolean
+  remover(id: number): T
+  selecionar(id: number): T
+  slecionarTodos(): [T]
 }
