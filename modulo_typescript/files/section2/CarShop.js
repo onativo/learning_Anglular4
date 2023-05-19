@@ -11,5 +11,8 @@ class CarShop {
     showCars() {
         return this.cars;
     }
+    openHours() {
+        return "Segunda à Setxa, das 08:00 às 18:00";
+    }
 }
 exports.default = CarShop;
