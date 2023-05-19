@@ -4,11 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const Veiculo_1 = __importDefault(require("./Veiculo"));
-class Car extends Veiculo_1.default {
-    constructor(model, doors) {
-        super();
-        this.model = model;
-        this.doors = doors;
-    }
+class Moto extends Veiculo_1.default {
 }
-exports.default = Car;
+exports.default = Moto;
