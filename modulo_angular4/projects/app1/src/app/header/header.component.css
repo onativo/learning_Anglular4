@@ -1,3 +1,10 @@
-.exemple{
-  color: rgb(23, 0, 126)
+.navbar{
+  background-color: #1cb1f69c;
+}
+.title{
+  color: #fff;
+  letter-spacing: 2px;
+}
+.container{
+  justify-content: flex-start;
 }
