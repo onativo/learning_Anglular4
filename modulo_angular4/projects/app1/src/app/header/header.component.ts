@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 
 export class HeaderComponent{
 
-
+  public title: string = "Teste de Inglês"
 
 
 

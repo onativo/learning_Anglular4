@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TriesComponent {
 
+  public emptyHeart:string = "/assets/img/coracao_vazio.png"
+  public fullHeart:string = "/assets/img/coracao_cheio.png"
+
 }
